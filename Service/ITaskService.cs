@@ -8,7 +8,7 @@ namespace R2EDuy.AspNetWebAPI.Assignment.Service
         IEnumerable<TaskItem> GetAllTasks();
         TaskItem? GetTaskById(Guid id);
         bool DeleteTask(Guid id);
-        TaskItem? UpdateTask(Guid id, TaskItemRequestUpdate taskItem);
+        TaskItem? UpdateTask(Guid id, TaskItemRequestUpdate edittedTaskItem);
         IEnumerable<TaskItem>? BulkAddTasks(IEnumerable<TaskItemRequestAdd> newTasks);
         bool BulkDeleteTasks(IEnumerable<Guid> ids);
     }

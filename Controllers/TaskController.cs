@@ -40,7 +40,7 @@ namespace R2EDuy.AspNetWebAPI.Assignment.Controllers
         public IActionResult DeleteTask(Guid id)
         {
             var deleted = _taskService.DeleteTask(id);
-            return deleted ? Ok("task deleted successfully!") : NotFound();
+            return deleted ? Ok("Task deleted successfully!") : NotFound();
         }
 
         [HttpPut("{id}")]

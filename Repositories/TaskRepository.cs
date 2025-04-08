@@ -22,15 +22,10 @@ namespace R2EDuy.AspNetWebAPI.Assignment.Repositories
             {
                 task.Title = updatedTask.Title;
                 task.IsCompleted = updatedTask.IsCompleted;
-
-                return task;
             }
-            else
-            {
-                return null;
-            }
+            return task;
         }
-        public void AddMultiple(IEnumerable<TaskItem> tasks) => _tasks.AddRange(tasks);
+        public void AddMultiple(IEnumerable<TaskItem> newTasks) => _tasks.AddRange(newTasks);
         public void RemoveMultiple(IEnumerable<Guid> ids)
         {
             var idSet = new List<Guid>(ids);

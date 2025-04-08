@@ -54,9 +54,9 @@ namespace R2EDuy.AspNetWebAPI.Assignment.Service
                 task.IsCompleted = edittedTaskItem.IsCompleted;
 
                 _taskRepository.Update(task);
-                return task;
+                
             }
-            return null;
+            return task;
         }
 
         public IEnumerable<TaskItem>? BulkAddTasks(IEnumerable<TaskItemRequestAdd> newTasks)
